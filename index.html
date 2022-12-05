@@ -5,41 +5,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Ugo's dev portfolio</title>
+  <!-- reset style sheet inserted to remove browser styles -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <!-- main logo / nav -->
+  <!-- Avatar and portfolio name -->
   <header>
-    <h1>Lernantino</h1>
-    <nav>
+    <h1>Ugo Nwokoro</h1>
+    <!-- Navigation menu linking to sections on same page -->
+    <nav class="navMenuLinks">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      <!-- Downloads Ugo's CV when clicked -->
+      <a href="./assets/Ugo's CV.pdf" download="Ugo Nwokoro CV">CV</a>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
+    <figcaption>
+      <h2>Technical Skill + Creativity</h2>
+    </figcaption>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2>About Me</h2>
+      <h3>About Ugo</h3>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
-      <h2>Work</h2>
+      <h3>Ugo's Work</h3>
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+      <h3>Contact Ugo</h3>
+      <div class="contactOptions">
+        <a href="tel:+447985181631">+44 7985 181631</a>
+        <a href="mailto:ugnwokoro@yahoo.com">ugnwokoro@yahoo.com</a>
+        <a href="https://github.com/Ugopreneur">Github</a>
+        <a href="https://twitter.com/ugopreneur">Twitter</a>
+        <a href="https://www.linkedin.com/in/ugonwokoro/">LinkedIn</a>
+      </div>
     </section>
   </main>
+
+  <!-- footer area with copywright info -->
+  <footer class="footer">
+    <p>&copy; Ugo Nwokoro</p>
+  </footer>
+
 </body>
 
 </html>
