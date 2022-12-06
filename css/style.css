@@ -38,6 +38,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: left;
+  width: 25%;
 }
 
 .croppedAndResizedAvatar {
@@ -45,6 +46,12 @@ header {
   height: 70px;
   border-radius: 50%;
   margin: 10px 20px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 37.5%;
 }
 
 /* Hero banner styles */
@@ -57,10 +64,7 @@ header {
 }
 
 #centeredText {
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  margin: auto 0;
+  margin: auto;
   text-align: center;
 }
 
@@ -70,8 +74,9 @@ header {
   display: grid; 
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 0px;
-  height: 100%;
+  row-gap: 40px;
+  column-gap: 40px;
+  margin: 40px 120px;
 }
 
 #aboutTitle {
@@ -122,7 +127,7 @@ header {
   grid-column-end: 7;
 }
 
-/* Work grid housing Ugo's portfolio */
+/* Work grid (nested grid) housing Ugo's portfolio */
 /* Credit: Grid CSS code created using Angry Tools CSS Grid Layout Generator*/
 #workGrid {
   display: grid; 
@@ -170,4 +175,15 @@ header {
   grid-column-start: 4;
   grid-row-end: 6;
   grid-column-end: 7;
+}
+
+/* Contact section (nested flexbox) styles */
+#contactOptions {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
 }
