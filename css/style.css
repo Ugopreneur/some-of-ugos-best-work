@@ -27,6 +27,11 @@ h6 {
   margin: 0;
 }
 
+.gridHeading a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .gridHeading h4 {
   font-size: 20px;
   font-weight: bold;
@@ -175,13 +180,13 @@ header {
   background-repeat: no-repeat;
   opacity: 0.8;
   margin: 10px;
-  cursor: hand;
   border: 3px solid var(--dull-white);
   display: grid;
 }
 
 .workGridItem:hover {
-  opacity:1;
+  opacity: 1;
+  cursor: grab;
 }
 
 #horiseon {
@@ -227,9 +232,10 @@ header {
 .gridHeading {
   background-color: var(--dull-white);
   color: var(--not-too-black);
-  position: absolute;
+  max-width: 200px;
   padding: 25px;
-  max-width: 550px;
+  margin: 50px 0 150px 0;
+  position: absolute;
   z-index: 100;
 }
 
@@ -254,3 +260,8 @@ footer {
   background-color: green;
   text-align: center;
 }
+
+@media only screen and (max-width: 780px) {}
+
+@media only screen and (max-width: 520px) {}
+
