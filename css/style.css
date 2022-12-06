@@ -261,62 +261,66 @@ footer {
   text-align: center;
 }
 
-/* For smaller laptop screens: */
-@media only screen and (max-width: 1330px) {
-  .contactOptionsFlexbox {
-    flex-direction: column;
+/* Responsiveness for smaller laptop screens: */
+  @media only screen and (max-width: 1330px) {
+    .contactOptionsFlexbox {
+      flex-direction: column;
+    }
   }
-}
 
- /* For tablet screens: */
-@media only screen and (max-width: 940px) {
-.page-wrapper {
-  margin: 40px 10px;
-}
-#workGrid {
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-#horiseon {
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-row-end: 2;
-  grid-column-end: 3;
-}
-
-#frontEnd { 
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-row-end: 3;
-  grid-column-end: 3;
-}
-
-#futureProject1 {
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-row-end: 4;
-  grid-column-end: 3;
-}
-
-#futureProject2 {
-  grid-row-start: 4;
-  grid-column-start: 1;
-  grid-row-end: 5;
-  grid-column-end: 3;
-}
-
-#futureProject3 { 
-  grid-row-start: 5;
-  grid-column-start: 1;
-  grid-row-end: 6;
-  grid-column-end: 3;
-}
-}
-
- /* For mobile phone screens: */
-@media only screen and (max-width: 680px) {
-  #nav-menu {
-    display: none;
+/* Responsiveness for ipads and other tablet screens: */
+  @media only screen and (max-width: 940px) {
+  .page-wrapper {
+    /* reduces margin so items take up more of the screen */
+    margin: 40px 10px;
   }
-}
+  
+  #workGrid { 
+    /* Changes work grid structure so child items are now stacked */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  #horiseon {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
+  }
+
+  #frontEnd { 
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+  }
+
+  #futureProject1 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 3;
+  }
+
+  #futureProject2 {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 3;
+  }
+
+  #futureProject3 { 
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-row-end: 6;
+    grid-column-end: 3;
+  }
+  }
+
+/* Responsiveness for mobile phone screens: */
+  @media only screen and (max-width: 680px) {
+    #nav-menu {
+      /* Hides nav menu from view of the user */
+      display: none;
+    }
+  }
 
