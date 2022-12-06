@@ -30,7 +30,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 5%;
+  margin: 20px 10px;
   height: 80px;
 }
 
@@ -39,6 +39,7 @@ header {
   align-items: center;
   justify-content: left;
   width: 25%;
+  font-size: 20px;
 }
 
 .croppedAndResizedAvatar {
@@ -48,11 +49,20 @@ header {
   margin: 10px 20px;
 }
 
-.nav-menu {
+#nav-menu {
   display: flex;
   justify-content: space-between;
   width: 37.5%;
+  margin: 0px 110px;
+  font-size: 30px;
 }
+
+/* I want the nav menu links to remain white in every state */
+.nav-link:link    {color:white;}
+.nav-link:visited {color:white;}
+.nav-link:hover   {color:white;}
+.nav-link:active  {color:white;}
+
 
 /* Hero banner styles */
 .hero-banner {
@@ -127,6 +137,16 @@ header {
   grid-column-end: 7;
 }
 
+.sectionHeadingArea {
+  text-align: right; 
+  border-right: 5px solid white;
+}
+
+.sectionHeading {
+  font-size: 50px;
+  margin: 0px 15px;
+}
+
 /* Work grid (nested grid) housing Ugo's portfolio */
 /* Credit: Grid CSS code created using Angry Tools CSS Grid Layout Generator*/
 #workGrid {
@@ -135,6 +155,10 @@ header {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px;
   height: 100%;
+}
+
+.workGridArea {
+  
 }
 
 #horiseon {
