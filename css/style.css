@@ -73,3 +73,63 @@ header {
   height: 100%;
 }
 
+#aboutTitle {
+
+  background-color: #6adadd; 
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+  
+}
+#aboutText {
+
+  background-color: #f6abca; 
+  grid-row-start: 1;
+  grid-column-start: 3;
+
+  grid-row-end: 3;
+  grid-column-end: 7;
+  
+}
+#workTitle {
+
+  background-color: #8b79dd; 
+  grid-row-start: 3;
+  grid-column-start: 1;
+
+  grid-row-end: 9;
+  grid-column-end: 3;
+  
+}
+#workGrid {
+
+  background-color: #ef95d8; 
+  grid-row-start: 3;
+  grid-column-start: 3;
+
+  grid-row-end: 9;
+  grid-column-end: 7;
+  
+}
+#contactTitle {
+
+  background-color: #756db5; 
+  grid-row-start: 9;
+  grid-column-start: 1;
+
+  grid-row-end: 10;
+  grid-column-end: 3;
+  
+}
+#contactOptions {
+
+  background-color: #c857dc; 
+  grid-row-start: 9;
+  grid-column-start: 3;
+
+  grid-row-end: 10;
+  grid-column-end: 7;
+  
+}
