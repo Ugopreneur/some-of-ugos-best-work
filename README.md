@@ -17,7 +17,7 @@ This web page presents Ugo's professional skills in an easily digestible way to 
   <img src="./assets/images/Deployed screenshot.png" width="350" title="hover text" alt="Screenshot of deployed application">
 </p>
 
-You can view the deployed application here: 
+You can view the deployed application here: https://ugopreneur.github.io/some-of-ugos-best-work/
 
 ## Built With
 Basic HTML and CSS. 
