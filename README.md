@@ -11,29 +11,36 @@
 
 ## Overview
 
-This web page presents Ugo's professional skills in an easily digestible way to establish a professional identity and help with his job search 
+This web page presents Ugo's professional skills in an easily digestible way to establish a professional identity and help with his job search. 
 
-<!--TODO: Add a screenshot of the live project.-->
+<p align="center">
+  <img src="./assets/images/Deployed screenshot.png" width="350" title="hover text" alt="Screenshot of deployed application">
+</p>
 
-### Built With
+You can view the deployed application here: 
+
+## Built With
 Basic HTML and CSS. 
-Used CSS tools: grids, flex, nested girds and flexboxes, media queries etc.
+<br>
+Also used many CSS tools: Grids, flexbox, nested grids and flexboxes, media queries, CSS variables, multiple CSS selectors etc.
 
 ## Features
 
-Read about Ugo
-Checkout some of Ugo's work
-How to contact Ugo
+About Ugo: Read a bit about Ugo himself
+Ugo's work: Checkout some of Ugo's best work. Click on links on the page to be taken to the deployed web pages.
+Contact Ugo: Multiple ways to contact Ugo via social media, phoen and email.
 
 ## Contact
 
-Email
-Twitter 
-LinkedIn and dev.to
+- Email: ugnwokoro@yahoo.com
+- Twitter: https://twitter.com/ugopreneur
+- LinkedIn: https://www.linkedin.com/in/ugonwokoro/ 
+- Dev.to: https://dev.to/ugopreneur 
 
 ## Acknowledgements
 
-Angry tools CSS grids
-Readme templates fromk kGitHub
-Inspiration from edX Bootcamp classes
-Images from chris something
+A few sources i must give credit for helping me build this:
+
+- Angry tools CSS grids: https://angrytools.com/css-grid/ 
+- Inspiration from edX Bootcamp classes: https://www.edx.org/boot-camps
+- Matrix code images designed by Christian Horz sourced on Adobe stock images: https://stock.adobe.com/images/glowing-green-binary-code-matrix-background-wide-banner/193576750
