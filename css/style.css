@@ -1,7 +1,6 @@
 /* General and Typography styles */
 * {
   box-sizing: border-box;
-  background-color: rgb(0, 0, 0);
 }
 
 body {
@@ -26,7 +25,7 @@ p {
   margin: 0;
 }
 
-/* Header styles (includes avatar, portfolio name and navigation menu */
+/* Header styles (avatar, portfolio name and nav menu) */
 header {
   display: flex;
   align-items: center;
@@ -41,13 +40,14 @@ header {
   justify-content: left;
 }
 
-.croppedAndResizeAvatar {
+.croppedAndResizedAvatar {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   margin: 10px 20px;
 }
 
+/* Hero banner styles */
 .hero-banner {
   height: 230px;
   background-image: url("../assets/images/3.webp");
@@ -64,7 +64,8 @@ header {
   text-align: center;
 }
 
-/* Main grid housing about, work and contact sections */
+/* Main grid housing about, work and contact sections*/ 
+/* Credit: Grid CSS code created using Angry Tools CSS Grid Layout Generator*/
 .page-wrapper {
   display: grid; 
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -74,62 +75,99 @@ header {
 }
 
 #aboutTitle {
-
   background-color: #6adadd; 
   grid-row-start: 1;
   grid-column-start: 1;
-
   grid-row-end: 3;
   grid-column-end: 3;
-  
 }
-#aboutText {
 
+#aboutText {
   background-color: #f6abca; 
   grid-row-start: 1;
   grid-column-start: 3;
-
   grid-row-end: 3;
   grid-column-end: 7;
-  
 }
-#workTitle {
 
+#workTitle {
   background-color: #8b79dd; 
   grid-row-start: 3;
   grid-column-start: 1;
-
   grid-row-end: 9;
   grid-column-end: 3;
-  
 }
-#workGrid {
 
+#workGrid {
   background-color: #ef95d8; 
   grid-row-start: 3;
   grid-column-start: 3;
-
   grid-row-end: 9;
   grid-column-end: 7;
-  
 }
-#contactTitle {
 
+#contactTitle {
   background-color: #756db5; 
   grid-row-start: 9;
   grid-column-start: 1;
-
   grid-row-end: 10;
   grid-column-end: 3;
-  
 }
-#contactOptions {
 
+#contactOptions {
   background-color: #c857dc; 
   grid-row-start: 9;
   grid-column-start: 3;
-
   grid-row-end: 10;
   grid-column-end: 7;
-  
+}
+
+/* Work grid housing Ugo's portfolio */
+/* Credit: Grid CSS code created using Angry Tools CSS Grid Layout Generator*/
+#workGrid {
+  display: grid; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%;
+}
+
+#horiseon {
+  background-color: #A9665B; 
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 7;
+}
+
+#frontEnd {
+  background-color: #A9BD7E; 
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 4;
+}
+
+#futureProject1 {
+  background-color: #F758A7; 
+  grid-row-start: 4;
+  grid-column-start: 4;
+  grid-row-end: 5;
+  grid-column-end: 7;
+}
+
+#futureProject2 {
+  background-color: #588B98; 
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-row-end: 6;
+  grid-column-end: 4;
+}
+
+#futureProject3 {
+  background-color: #97DBFE; 
+  grid-row-start: 5;
+  grid-column-start: 4;
+  grid-row-end: 6;
+  grid-column-end: 7;
 }
