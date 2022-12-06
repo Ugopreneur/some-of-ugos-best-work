@@ -263,9 +263,6 @@ footer {
 
 /* For smaller laptop screens: */
 @media only screen and (max-width: 1330px) {
-  body {
-    background-color: red;
-  }
   .contactOptionsFlexbox {
     flex-direction: column;
   }
@@ -273,9 +270,6 @@ footer {
 
  /* For tablet screens: */
 @media only screen and (max-width: 940px) {
-  body {
-    background-color: blue;
-}
 .page-wrapper {
   margin: 40px 10px;
 }
@@ -318,12 +312,8 @@ footer {
   grid-column-end: 3;
 }
 
-
  /* For mobile phone screens: */
 @media only screen and (max-width: 680px) {
-  body {
-    background-color: yellow;
-  }
   #nav-menu {
     display: none;
   }
