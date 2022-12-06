@@ -1,4 +1,10 @@
 /* General and Typography styles */
+/* CSS variables for colour scheme copied from CSS Snippet Cheatsheet Mini project */
+:root {
+  --not-too-black: #161717;
+  --dull-white: #e0eae4;
+}
+  
 * {
   box-sizing: border-box;
 }
@@ -8,8 +14,8 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  color: white;
-  background-color: black;
+  color: var(--dull-white);
+  background-color: var(--not-too-black);
 }
 
 h1,
@@ -71,15 +77,16 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: grid;
 }
 
-#centeredText {
+#bannerText {
   margin: auto;
   text-align: center;
 }
 
 /* Main grid housing about, work and contact sections*/ 
-/* Credit: Grid CSS code created using Angry Tools CSS Grid Layout Generator*/
+/* Credit: Grid CSS code created using Angry Tools CSS Grid Layout Generator https://angrytools.com/css-grid/*/
 .page-wrapper {
   display: grid; 
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -90,7 +97,6 @@ header {
 }
 
 #aboutTitle {
-  background-color: #6adadd; 
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 3;
@@ -98,15 +104,14 @@ header {
 }
 
 #aboutText {
-  background-color: #f6abca; 
   grid-row-start: 1;
   grid-column-start: 3;
   grid-row-end: 3;
   grid-column-end: 7;
+  margin: 10px;
 }
 
 #workTitle {
-  background-color: #8b79dd; 
   grid-row-start: 3;
   grid-column-start: 1;
   grid-row-end: 9;
@@ -114,7 +119,6 @@ header {
 }
 
 #workGrid {
-  background-color: #ef95d8; 
   grid-row-start: 3;
   grid-column-start: 3;
   grid-row-end: 9;
@@ -122,7 +126,6 @@ header {
 }
 
 #contactTitle {
-  background-color: #756db5; 
   grid-row-start: 9;
   grid-column-start: 1;
   grid-row-end: 10;
@@ -130,7 +133,6 @@ header {
 }
 
 #contactOptions {
-  background-color: #c857dc; 
   grid-row-start: 9;
   grid-column-start: 3;
   grid-row-end: 10;
@@ -148,7 +150,7 @@ header {
 }
 
 /* Work grid (nested grid) housing Ugo's portfolio */
-/* Credit: Grid CSS code created using Angry Tools CSS Grid Layout Generator*/
+/* Credit: Grid CSS code created using Angry Tools CSS Grid Layout Generator https://angrytools.com/css-grid/*/
 #workGrid {
   display: grid; 
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -157,48 +159,67 @@ header {
   height: 100%;
 }
 
-.workGridArea {
-  
+.workGridItem {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
+  cursor: hand;
+  border-radius: 5%;
+  border: 3px solid var(--dull-white);
+  display: grid;
 }
 
 #horiseon {
-  background-color: #A9665B; 
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 4;
   grid-column-end: 7;
+  background-image: url(../assets/images/horiseon.png);
 }
 
-#frontEnd {
-  background-color: #A9BD7E; 
+#frontEnd { 
   grid-row-start: 4;
   grid-column-start: 1;
   grid-row-end: 5;
   grid-column-end: 4;
+  background-image: url(../assets/images/front-end-study-guide.png);
 }
 
 #futureProject1 {
-  background-color: #F758A7; 
   grid-row-start: 4;
   grid-column-start: 4;
   grid-row-end: 5;
   grid-column-end: 7;
+  background-image: url(../assets/images/future-project.webp);
 }
 
 #futureProject2 {
-  background-color: #588B98; 
   grid-row-start: 5;
   grid-column-start: 1;
   grid-row-end: 6;
   grid-column-end: 4;
+  background-image: url(../assets/images/future-project.webp);
 }
 
-#futureProject3 {
-  background-color: #97DBFE; 
+#futureProject3 { 
   grid-row-start: 5;
   grid-column-start: 4;
   grid-row-end: 6;
   grid-column-end: 7;
+  background-image: url(../assets/images/future-project.webp);
+}
+
+.gridHeading {
+  background-color: var(--dull-white);
+  color: var(--not-too-black);
+  position: absolute;
+  right: -50px;
+  top: 100px;
+  padding: 25px;
+  max-width: 550px;
+  z-index: 100;
+  font-size: 18px;
 }
 
 /* Contact section (nested flexbox) styles */
